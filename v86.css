@@ -91,6 +91,17 @@ h4 {
     margin-bottom: 10px;
     outline: 1px solid #555;
 }
+#screen_container:fullscreen {
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+#screen_container:fullscreen #vga {
+    /* #vga usually has these set, we want to ignore them in fullscreen. */
+    width: auto !important;
+    height: 100% !important;
+}
 #boot_options a {
     text-decoration: none;
     font-weight: bold;
